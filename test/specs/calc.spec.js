@@ -33,18 +33,16 @@
     });
 
     describe('Tests for factorial', function (){
+        it('Should be a function', function (){
+          expect(window.calc.factorial).to.be.a('function');
+        });
+
         it('Should only accept numbers as an argument', function () {
-            var factorial = window.calc.factorial('number');
-            console.log(factorial);
-            expect(factorial).to.equal.(0);
+            var factorial = window.calc.factorial(4);
+            expect(factorial).to.be.a('number');
         });
 
-        it('Should not accept zero as an argument', function (){
-            var zero = window.calc.factorial(0);
-            console.lo
-
-        });
-
+        
     });
 
 

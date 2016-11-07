@@ -4,7 +4,7 @@
     window.calc = window.calc || {};
 
     window.calc.sum = sum;
-    window.calc.factorial = factorial;
+    window.calc.factorial = factorial
 
     /**
      * Adds whatever numbers are provided and returns the total
