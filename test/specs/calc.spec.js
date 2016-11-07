@@ -26,14 +26,24 @@
 
         it('must have at least one argument', function () {
             var argument = window.calc.sum();
-            console.log(argument);
-            expect(undefined).to.equal(undefined);
+            console.log();
+            expect(argument).to.equal(0);
         });
 
     });
 
-    describes('Tests for factorial', function (){
-        it()
+    describe('Tests for factorial', function (){
+        it('Should only accept numbers as an argument', function () {
+            var factorial = window.calc.factorial('number');
+            console.log(factorial);
+            expect(factorial).to.equal.(0);
+        });
+
+        it('Should not accept zero as an argument', function (){
+            var zero = window.calc.factorial(0);
+            console.lo
+
+        });
 
     });
 
