@@ -3,6 +3,7 @@
 
     // TODO: Your tests go here!
     var expect = chai.expect;
+    window.calc = window.calc || {};
 
     describe('my first test for calculator', function () {
         it('should know that one equals one', function () {
