@@ -42,7 +42,10 @@
             expect(factorial).to.be.a('number');
         });
 
-        
+        it ('Should return zero when an argument is anything other than a number', function (){
+            var myVariable = window.calc.factorial('Jessica');
+            expect(myVariable).to.be(0);
+        });
     });
 
 
