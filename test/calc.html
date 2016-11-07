@@ -9,8 +9,15 @@
       <main id='mocha'></main>
 
     <!-- libraries for tests and things -->
-    <script src='../node_modules/mocha/mocha.js'></script>
-    <script src='../node_modules/chai/chai.js'></script>
-    <script src='../src/js/calc.js'></script>
+      <script src='../node_modules/mocha/mocha.js'></script>
+      <script src='../node_modules/chai/chai.js'></script>
+
+      <!-- source js code -->
+      <script src='../src/js/calc.js'></script>
+
+      <!-- code for tests -->
+      <script>mocha.setup('bdd');</script>
+      <script src='specs/calc.js'></script>
+      <script>mocha.run();</script>
     </body>
 </html>
