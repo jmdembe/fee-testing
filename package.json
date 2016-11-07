@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/jmdembe/fee-testing/issues"
   },
-  "homepage": "https://github.com/jmdembe/fee-testing#readme"
+  "homepage": "https://github.com/jmdembe/fee-testing#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
 }
