@@ -1,7 +1,6 @@
 (function() {
     'use strict';
 
-
     // TODO: Your tests go here!
     var expect = chai.expect;
 
