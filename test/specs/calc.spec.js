@@ -37,13 +37,13 @@
         });
 
         it('Should only accept numbers as an argument', function () {
-            var factorial = window.calc.factorial(4);
-            expect(factorial).to.be(24);
+            var result = window.calc.factorial('cheese');
+            expect(result).to.equal(0);
         });
 
-        it ('Should return zero when an argument is anything other than a number', function (){
-            var myVariable = window.calc.factorial('Jessica');
-            expect(myVariable).to.be(0);
+        it ('Should return the correct factorial when a number is provided', function (){
+            var myVariable = window.calc.factorial(4);
+            expect(myVariable).to.equal(24);
         });
     });
 
