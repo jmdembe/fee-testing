@@ -38,7 +38,7 @@
 
         it('Should only accept numbers as an argument', function () {
             var factorial = window.calc.factorial(4);
-            expect(factorial).to.be.a('number');
+            expect(factorial).to.be(24);
         });
 
         it ('Should return zero when an argument is anything other than a number', function (){

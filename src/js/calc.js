@@ -4,7 +4,7 @@
     window.calc = window.calc || {};
 
     window.calc.sum = sum;
-    window.calc.factorial = factorial
+    window.calc.factorial = factorial;
 
     /**
      * Adds whatever numbers are provided and returns the total
@@ -14,12 +14,8 @@
     function sum(numbers) {
         var total = 0;
 
-        if (!numbers) {
+        if (typeof(numbers)!== 'object') {
             return total;
-        }
-
-        if (typeof(numbers.forEach)!=='function') {
-            numbers = [];
         }
 
         numbers.forEach(function addThem(num) {
